@@ -68,16 +68,20 @@ body {
     width: 10%;
 }
 
-.selectChar.1 {   
+.selectChar.One {
+    background-color: tomato;
 }
 
-.selectChar.2{
+.selectChar.Two{
+    background-color: thistle;
 }
 
-.selectChar.3{
+.selectChar.Three{
+    background-color: violet;
 }
 
-.selectChar.4{
+.selectChar.Four{
+    background-color: yellow;
 }
 
 .chooseFighter {
