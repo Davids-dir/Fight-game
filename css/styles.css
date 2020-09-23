@@ -1,43 +1,70 @@
+/* Fuentes empleadas */
+@font-face {
+    font-family: street;
+    src: url(/fonts/customFont.ttf);
+    font-weight: 400;
+}
+
 /* Estructura de la pagina  */
 body {
     margin: 0em;
 }
 
-.display{
-    height: 61em;
+.display {
+    height: 100vh;
+}
+
+.display.Start {
+    height: 100%;
+    display: none;
 }
 
 .display.Char {
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 1);
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .display.Fight {
     background-color: chartreuse;
-    height: 100%;
     display: none;
 }
 
 .display.End {
     background-color: crimson;
-    height: 100%;
     display: none;
 }
 
 .button {
-    height: 10%;
-    width: 5%;
+    height: 40%;
+    width: 50%;
 }
 
-/* Estructura de 'DISPLAY CHAR */
+/* Estructura de 'Seleccion de Personaje' */
 .nullCharTop {
-    height: 30%;
+    color: white;
+    font-family: street;
+    font-size: xx-large;
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+}
+
+.selectDIV {
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+}
+
+.selectNull {
+    height: 100%;
+    width: 30%;
 }
 
 .selectChar {
-    height: 20%;
+    color: blanchedalmond;
+    height: 100%;
     width: 10%;
 }
 
@@ -45,15 +72,39 @@ body {
 }
 
 .selectChar.2{
-
 }
 
 .selectChar.3{
-
 }
 
 .selectChar.4{
-
 }
 
+.chooseFighter {
+    display: flex;
+    flex-direction: row;
+    height: 55%;
+}
+
+.fighter {
+    width: 20%;
+}
+
+.chooseFighterVS {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgVS {
+    height: 50%;
+    width: 100%;
+}
+
+.versus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
 

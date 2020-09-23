@@ -8,27 +8,55 @@
 </head>
 <body>
 
-    <div class="display">
+    <!-- Pantalla de 'Start' -->
+    <section>
+        <div class="display Start">Pantalla 1
 
-        <!-- Pantalla de 'Seleccion de Personaje -->
+        </div>
+
+    </section>
+
+    <!-- Pantalla de 'Seleccion de Personaje -->
+    <section>
         <div class="display Char">
-            <div class="nullCharTop">NULL</div>
-            <div>
+            <div class="nullCharTop">SELECT YOUR FIGHTER</div>
+            <div class="selectDIV">
+                <div class="selectNull"></div>
                 <div class="selectChar 1">Char1</div>
                 <div class="selectChar 2">Char2</div>
                 <div class="selectChar 3">Char3</div>
                 <div class="selectChar 3">Char4</div>
+                <div class="selectNull"></div>
+            </div>
+            <div class="chooseFighter">
+                <div class="selectNull"></div>
+                <div class="fighter P1"></div>
+                <div class="chooseFighterVS">
+                    <div class="imgVS"><img src="/img/versus.png" alt="versus" height="220" width="220"></div>
+                    <div class="versus"><button class="button">Fight!</button></div>
+                </div>
+                <div class="fighter P2"></div>
+                <div class="selectNull"></div>
             </div>
             
+        </div>
+    </section>
+
+    <!-- Pantalla de 'Lucha' -->
+    <section>
+        <div class="display Fight">Pantalla 3
             <button class="button">Fight!</button>
         </div>
+    </section>
 
-        <!-- Pantalla de 'Lucha' -->
-        <div class="display Fight"><button class="button">Fight!</button>Pantalla 2</div>
+    <!-- Pantalla de 'Resultado' -->
+    <section>
+        
+        <div class="display End">Pantalla 4
+            <button class="button">Fight!</button>
+        </div>
+    </section>
 
-        <!-- Pantalla de 'Resultado' -->
-        <div class="display End"><button class="button">Fight!</button>Pantalla 3</div>
-    </div>
-
+    <script src="/js/main.js"></script>
 </body>
 </html>
