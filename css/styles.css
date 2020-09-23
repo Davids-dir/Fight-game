@@ -1,7 +1,7 @@
 /* Fuentes empleadas */
 @font-face {
-    font-family: street;
-    src: url(/fonts/customFont.ttf);
+    font-family: personalFont;
+    src: url(/fonts/personalFont.otf);
     font-weight: 400;
 }
 
@@ -43,18 +43,18 @@ body {
 /* Estructura de 'Seleccion de Personaje' */
 .nullCharTop {
     color: white;
-    font-family: street;
+    font-family: personalFont;
     font-size: xx-large;
     letter-spacing: 0.2em;
     display: flex;
     justify-content: center;
-    height: 40%;
+    height: 30%;
 }
 
 .selectDIV {
     display: flex;
     flex-direction: row;
-    height: 25%;
+    height: 35%;
 }
 
 .selectNull {

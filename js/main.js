@@ -3,15 +3,13 @@ player1 = ""
 player2 = ""
 
 // Array con el pool de personajes para escoger
-pool = ["ryu", "chunli", "ken", "akuma"]
+pool = ["Ryu", "Chunli", "Ken", "Akuma"]
 
 // Funcion de seleccion de personaje
 function Selection (a) {
     for (let i = 0; i < pool.lenght; i ++);
-        
-
-
 }
 
 
 
+console.log(pool)
