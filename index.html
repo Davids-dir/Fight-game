@@ -19,13 +19,15 @@
     <!-- Pantalla de 'Seleccion de Personaje -->
     <section>
         <div class="display Char">
-            <div class="nullCharTop">SELECT YOUR FIGHTER</div>
+            <div class="nullCharTop">
+                <h2>SELECT YOUR FIGHTER</h2>
+            </div>
             <div class="selectDIV">
                 <div class="selectNull"></div>
-                <div class="selectChar One" id="ryu" onclick="Selection()">Char1</div>
-                <div class="selectChar Two" id="chunli" onclick="Selection()">Char2</div>
-                <div class="selectChar Three" id="ken" onclick="Selection()">Char3</div>
-                <div class="selectChar Four" id="akuma" onclick="Selection()">Char4</div>
+                <div class="selectChar One" id="Ryu" onclick="Select ('Ryu')"></div>
+                <div class="selectChar Two" id="Chunli" onclick="Select ('Chunli')"></div>
+                <div class="selectChar Three" id="Ken" onclick="Select ('Ken')"></div>
+                <div class="selectChar Four" id="Akuma" onclick="Select ('Akuma')"></div>
                 <div class="selectNull"></div>
             </div>
             <div class="chooseFighter">
@@ -58,6 +60,5 @@
     </section>
 
     <script src="/js/main.js"></script>
-    <script src="/js/fighters.js"></script>
 </body>
 </html>

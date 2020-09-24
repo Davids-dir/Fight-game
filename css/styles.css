@@ -1,3 +1,8 @@
+/* Border Box for all HTML */
+* {
+    box-sizing: border-box;
+}
+
 /* Fuentes empleadas */
 @font-face {
     font-family: personalFont;
@@ -69,19 +74,19 @@ body {
 }
 
 .selectChar.One {
-    background-color: tomato;
+    background-image: url(/img/ryu-static.png)
 }
 
 .selectChar.Two{
-    background-color: thistle;
+    background-image: url(/img/chunli-static.png);
 }
 
 .selectChar.Three{
-    background-color: violet;
+    background-image: url(/img/ken-static.png);
 }
 
 .selectChar.Four{
-    background-color: yellow;
+    background-image: url(/img/akuma-static.png);
 }
 
 .chooseFighter {
