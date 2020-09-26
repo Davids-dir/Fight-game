@@ -20,14 +20,15 @@ body {
 }
 
 .display.Start {
-    height: 100%;
-    display: none;
+    color: azure;
+    background-color: black;
 }
 
 .display.Char {
     background-color: rgba(0, 0, 0, 1);
     display: flex;
     flex-direction: column;
+    display: none;
 }
 
 .display.Fight {
@@ -69,12 +70,14 @@ body {
 
 .selectChar {
     color: blanchedalmond;
+    cursor: pointer;
     height: 100%;
     width: 10%;
 }
 
 .selectChar.One {
     background-image: url(/img/ryu-static.png)
+    
 }
 
 .selectChar.Two{

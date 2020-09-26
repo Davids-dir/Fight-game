@@ -9,25 +9,25 @@
 <body>
 
     <!-- Pantalla de 'Start' -->
-    <section>
-        <div class="display Start">Pantalla 1
-
+    <section id="phase1">
+        <div class="display Start">
+            <button id="buttonStart" onclick="change('phase1', 'phase2', 'players')">Start</button>
         </div>
 
     </section>
 
     <!-- Pantalla de 'Seleccion de Personaje -->
     <section>
-        <div class="display Char">
+        <div id="phase2" class="display Char">
             <div class="nullCharTop">
-                <h2>SELECT YOUR FIGHTER</h2>
+                <h2 id="textSelect" class="textSelect">SELECT YOUR FIGHTER</h2>
             </div>
             <div class="selectDIV">
                 <div class="selectNull"></div>
-                <div class="selectChar One" id="Ryu" onclick="Select ('Ryu')"></div>
-                <div class="selectChar Two" id="Chunli" onclick="Select ('Chunli')"></div>
-                <div class="selectChar Three" id="Ken" onclick="Select ('Ken')"></div>
-                <div class="selectChar Four" id="Akuma" onclick="Select ('Akuma')"></div>
+                <div class="selectChar One" id="Ryu" onclick="selChar ('Ryu')"></div>
+                <div class="selectChar Two" id="Chunli" onclick="selChar ('Chunli')"></div>
+                <div class="selectChar Three" id="Ken" onclick="selChar ('Ken')"></div>
+                <div class="selectChar Four" id="Akuma" onclick="selChar ('Akuma')"></div>
                 <div class="selectNull"></div>
             </div>
             <div class="chooseFighter">
@@ -35,7 +35,7 @@
                 <div class="fighter P1"></div>
                 <div class="chooseFighterVS">
                     <div class="imgVS"><img src="/img/versus.png" alt="versus" height="220" width="220"></div>
-                    <div class="versus"><button class="button">Go!</button></div>
+                    <div class="versus"><button class="button" onclick="display(2)">Go!</button></div>
                 </div>
                 <div class="fighter P2"></div>
                 <div class="selectNull"></div>
