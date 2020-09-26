@@ -6,7 +6,7 @@
 /* Fuentes empleadas */
 @font-face {
     font-family: personalFont;
-    src: url(/fonts/personalFont.otf);
+    src: url(../fonts/personalFont.otf);
     font-weight: 400;
 }
 
@@ -20,14 +20,15 @@ body {
 }
 
 .display.Start {
-    color: azure;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .display.Char {
     background-color: rgba(0, 0, 0, 1);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     display: none;
 }
 
@@ -46,7 +47,55 @@ body {
     width: 50%;
 }
 
-/* Estructura de 'Seleccion de Personaje' */
+/* Estilos de 'Pantalla Start' */
+.selectNullStart {
+    height: 25%;
+    width: 100%;
+}
+
+#tittleGame {
+    background-image: url(../img/street-fighter-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40%;
+}
+
+#tittleBottom {
+    display: flex;
+    flex-direction: row;
+    height: 35%;
+}
+
+.nullStart {
+    height: 100%;
+    width: 35%;
+}
+
+#buttonStartDiv {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+
+#buttonStartChildTop {
+    height: 10%;
+}
+
+#buttonStartChildBottom {
+    height: 90%;
+}
+
+#buttonStart {
+    font-family: personalFont;
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    height: 50%;
+    width: 50%;
+    border: none;
+}
+
+/* Estilos de 'Seleccion de Personaje' */
 .nullCharTop {
     color: white;
     font-family: personalFont;
@@ -76,26 +125,25 @@ body {
 }
 
 .selectChar.One {
-    background-image: url(/img/ryu-static.png)
-    
+    background-image: url(../img/ryu-static.png)
 }
 
 .selectChar.Two{
-    background-image: url(/img/chunli-static.png);
+    background-image: url(../img/chunli-static.png);
 }
 
 .selectChar.Three{
-    background-image: url(/img/ken-static.png);
+    background-image: url(../img/ken-static.png);
 }
 
 .selectChar.Four{
-    background-image: url(/img/akuma-static.png);
+    background-image: url(../img/akuma-static.png);
 }
 
 .chooseFighter {
     display: flex;
     flex-direction: row;
-    height: 55%;
+    height: 35%;
 }
 
 .fighter {

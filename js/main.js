@@ -1,6 +1,6 @@
 // Inicio la estructura del programa
 
-// Creo un contador para aplicar en la condicion
+// Declaro las variables con las que vamos a trabajar
 var contador = 0;
 var jugador1;
 var jugador2;
@@ -35,7 +35,7 @@ function change(a, b, action = null) {
     document.getElementById(b).style.display = "block";
 
     if (action == "players")
-        document.getElementById("textSelect").innerHTML = 'Selecciona player ONE';
+        document.getElementById("textSelect").innerHTML = 'Select player One';
 }
 
 
@@ -47,18 +47,16 @@ function selChar(a) {
             document.getElementById(a).style.filter = 'grayscale(100%)';
             jugador1 = pool[a];
             contador++;
-
-            document.getElementById("textSelect").innerHTML = 'Selecciona player TWO';
+            document.getElementById("textSelect").innerHTML = 'Select player Two';
         }
         else {
-            document.getElementsByClassName('textSelect').innerHTML = 'Player 2 Select your Fighter';
             document.getElementById(a).style.filter = 'grayscale(100%)';
             jugador2 = pool[a];
             contador++;
+            document.getElementById("textSelect").innerHTML = 'Press Fight';
         }
     }
     else {
-        alert()
     }
 }
 

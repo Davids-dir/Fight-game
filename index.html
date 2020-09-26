@@ -9,9 +9,18 @@
 <body>
 
     <!-- Pantalla de 'Start' -->
-    <section id="phase1">
-        <div class="display Start">
-            <button id="buttonStart" onclick="change('phase1', 'phase2', 'players')">Start</button>
+    <section >
+        <div class="display Start" id="phase1">
+        <div class="selectNullStart"></div>
+        <div id="tittleGame"></div>
+        <div id="tittleBottom">
+            <div class="nullStart"></div>
+            <div id="buttonStartDiv">
+                <div id="buttonStartChildTop"></div>
+                <div id="buttonStartChildBottom"><button id="buttonStart" onclick="change('phase1', 'phase2', 'players')">Press to Start</button></div>
+            </div>
+            <div class="nullStart"></div>
+        </div>
         </div>
 
     </section>
@@ -20,7 +29,7 @@
     <section>
         <div id="phase2" class="display Char">
             <div class="nullCharTop">
-                <h2 id="textSelect" class="textSelect">SELECT YOUR FIGHTER</h2>
+                <h2 id="textSelect" class="textSelect"></h2>
             </div>
             <div class="selectDIV">
                 <div class="selectNull"></div>
@@ -35,7 +44,7 @@
                 <div class="fighter P1"></div>
                 <div class="chooseFighterVS">
                     <div class="imgVS"><img src="/img/versus.png" alt="versus" height="220" width="220"></div>
-                    <div class="versus"><button class="button" onclick="display(2)">Go!</button></div>
+                    <div class="versus"><button class="button" onclick="display(2)">Fight!</button></div>
                 </div>
                 <div class="fighter P2"></div>
                 <div class="selectNull"></div>
@@ -46,7 +55,7 @@
 
     <!-- Pantalla de 'Lucha' -->
     <section>
-        <div class="display Fight">Pantalla 3
+        <div class="display Fight" id="phase3">
             <button class="button">Fight!</button>
         </div>
     </section>
@@ -54,7 +63,7 @@
     <!-- Pantalla de 'Resultado' -->
     <section>
         
-        <div class="display End">Pantalla 4
+        <div class="display End" id="phase4">
             <button class="button">Fight!</button>
         </div>
     </section>
