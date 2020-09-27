@@ -10,6 +10,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'numbersFont';
+    font-weight: normal;
+    src: url(../fonts/numbersFont.ttf);
+    }
+
 /* Estructura de la pagina  */
 body {
     margin: 0em;
@@ -208,6 +214,8 @@ body {
 
 /* Estilos de la pantalla de lucha */
 .nullFight {
+    display: flex;
+    flex-direction: row;
     height: 15%;
 }
 
@@ -234,7 +242,39 @@ body {
 }
 
 #stagePlayersTop {
-    height: 75%;
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+}
+
+#lifeBarP1{
+    color: white;
+    font-family: numbersFont;
+    font-size: xx-large;
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+    height: 70%;
+    width: 30%;
+}
+
+#nullBar {
+    width: 40%;
+}
+
+#lifeBarP2 {
+    color: white;
+    font-family: numbersFont;
+    font-size: xx-large;
+    text-align: end;
+    margin-top: 0.3em;
+    margin-right: 0.4em;
+    height: 70%;
+    width: 30%;
+}
+
+#stagePlayersNull {
+    height: 60%;
     width: 100%;
 }
 
@@ -255,3 +295,34 @@ body {
     width: 50%;
     transform: rotateY(180deg);
 }
+
+.fightInfo {
+    height: 100%;
+    width: 20%;
+}
+
+#nameP1 {
+    color: white;
+    font-family: personalFont;
+    font-size: xx-large;
+    height: 40%;
+    width: 100%;
+}
+
+
+
+#containButton {
+    text-align: center;
+    margin: auto;
+    width: 30%;
+}
+
+#nameP2 {
+    color: white;
+    font-family: personalFont;
+    font-size: xx-large;
+    text-align: end;
+    height: 40%;
+    width: 100%;
+}
+
