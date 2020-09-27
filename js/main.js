@@ -21,8 +21,6 @@ let Chunli = new Fighter("Chunli", 170, 23);
 let Akuma = new Fighter("Akuma", 200, 28);
 
 // Creo el array con los luchadores del pool asignandolos mediante 'clave:valor'
-
-
 let pool = {
     'Ryu': Ryu,
     'Ken': Ken,
