@@ -76,6 +76,7 @@ const Hit = () => {
     // Pega Player 1 si el numero obtenido en randon es 0
     if (chance_hit % 2 == 0) {
         player2.life = player2.life - player1.strength;
+        document.getElementById('lifeBarP2').innerHTML = player2.life;
         
         if (player2.life <= 0) {
             player2.life = 0;
@@ -86,6 +87,7 @@ const Hit = () => {
     // Pega el player 2 si el numero obtenido en random es 1
     else {
         player1.life = player1.life - player2.strength;
+        document.getElementById('lifeBarP1').innerHTML = player1.life;
         
         if (player1.life <= 0) {
             player1.life = 0;
