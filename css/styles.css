@@ -216,7 +216,7 @@ body {
 .nullFight {
     display: flex;
     flex-direction: row;
-    height: 15%;
+    height: 20%;
 }
 
 #midFight {
@@ -244,18 +244,21 @@ body {
 #stagePlayersTop {
     display: flex;
     flex-direction: row;
-    height: 15%;
+    height: 10%;
     width: 100%;
 }
 
 #lifeBarP1{
-    color: white;
+    background-color: yellow;
+    color: black;
     font-family: numbersFont;
     font-size: xx-large;
     margin-top: 0.3em;
     margin-left: 0.3em;
-    height: 70%;
+    padding-left: 0.3em;
+    height: 60%;
     width: 30%;
+    border-color: white;
 }
 
 #nullBar {
@@ -263,18 +266,22 @@ body {
 }
 
 #lifeBarP2 {
-    color: white;
+    background-color: yellow;
+    color: black;
     font-family: numbersFont;
     font-size: xx-large;
     text-align: end;
     margin-top: 0.3em;
     margin-right: 0.4em;
-    height: 70%;
+    padding-right: 0.5em;
+    height: 60%;
     width: 30%;
 }
 
 #stagePlayersNull {
-    height: 60%;
+    display: flex;
+    flex-direction: row;
+    height: 65%;
     width: 100%;
 }
 
@@ -305,16 +312,17 @@ body {
     color: white;
     font-family: personalFont;
     font-size: xx-large;
-    height: 40%;
+    height: 15%;
     width: 100%;
+    margin-left: 0.4em;
 }
 
 
 
 #containButton {
     text-align: center;
-    margin: auto;
     width: 30%;
+    margin-top: 2em;
 }
 
 #nameP2 {
@@ -322,7 +330,13 @@ body {
     font-family: personalFont;
     font-size: xx-large;
     text-align: end;
-    height: 40%;
+    height: 15%;
     width: 100%;
+    margin-right: 0.5em;
 }
 
+#actionButton {
+    cursor: pointer;
+    height: 60%;
+    width: 30%;
+}

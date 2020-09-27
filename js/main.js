@@ -65,10 +65,33 @@ const selChar = (a) => {
     }
 }
 
-// Funcion para mostrar el nombre y vida de los luchadores en la Fase 3
-/*function FightInfo (a, b) {
-    document.getElementById("nameP1").innerHTML = a.name;
-    document.getElementById("nameP2").innerHTML = b.name;
+
+
+// Funcion que alterna los golpes entre los jugadores
+const Hit = () => {
+
+    //Obtengo un numero aleatorio para asignar a cada jugador con una condicion de par o impar
+    chance_hit = Math.floor(Math.random() * 2);
+    
+    // Pega Player 1 si el numero obtenido en randon es 0
+    if (chance_hit % 2 == 0) {
+        player2.life = player2.life - player1.strength;
+        
+        if (player2.life <= 0) {
+            player2.life = 0;
+            document.getElementById('phase4').style.display = 'block';
+            document.getElementById('phase3').style.display = 'none';
+        }
+    }
+    // Pega el player 2 si el numero obtenido en random es 1
+    else {
+        player1.life = player1.life - player2.strength;
+        
+        if (player1.life <= 0) {
+            player1.life = 0;
+            document.getElementById('phase4').style.display = 'block';
+            document.getElementById('phase3').style.display = 'none';
+        } 
+    }
 }
 
-FightInfo(player1, player2);*/
