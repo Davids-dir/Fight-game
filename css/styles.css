@@ -360,17 +360,26 @@ body {
     width: 60%;
 }
 
-.winnerNull {
+#winnerText {
     font-family: personalFont;
     color: white;
     font-size: xx-large;
-    margin: auto;
+    padding-top: 2em;
     text-align: center;
     height: 20%;
     width: 100%;
 }
 
 #winnerPortrait {
+    margin: auto;
+    text-align: center;
     height: 60%;
     width: 100%;
 }
+
+.winnerNull {
+    text-align: center;
+    height: 20%;
+    width: 100%;
+}
+
