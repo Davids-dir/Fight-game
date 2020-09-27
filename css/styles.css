@@ -33,9 +33,12 @@ body {
 }
 
 .display.Fight {
+    display: flex;
+    flex-direction: row;
+    display: none;
+    color: white;
     background-color: rgba(0, 0, 0, 1);
     background-repeat: no-repeat;
-    display: none;
 }
 
 .display.End {
@@ -141,7 +144,6 @@ body {
 
 .selectChar.Three{
     background-image: url(../img/ken-static.png);
-    background-color: ;
     background-repeat: no-repeat;
     margin-top: 1em;
     height: 95.2%;
@@ -205,7 +207,51 @@ body {
 }
 
 /* Estilos de la pantalla de lucha */
+.nullFight {
+    height: 15%;
+}
+
+#midFight {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 100%;
+}
+
+.midSideNull {
+    height: 100%;
+    width: 15%;
+}
+
 #stage {
+    display: flex;
+    flex-direction: column;
     background-image: url(../img/stage.gif);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 70%;
+}
+
+#stagePlayersTop {
+    height: 75%;
+    width: 100%;
+}
+
+#stagePlayersBottom {
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    width: 100%;
+}
+
+#player1Stage {
+    text-align: center;
+    width: 50%;
+}
+
+#player2Stage {
+    text-align: center;
+    width: 50%;
+    transform: rotateY(180deg);
 }

@@ -1,9 +1,7 @@
-// Inicio la estructura del programa
-
 // Declaro las variables con las que vamos a trabajar
 var contador = 0;
-var jugador1;
-var jugador2;
+var player1;
+var player2;
 
 
 // Creamos la clase de los luchadores
@@ -38,27 +36,28 @@ const Change = (a, b) => {
 // Asignamos los objetos a los jugadores cuando pulsen sobre el personaje
 const selChar = (a) => {
 
-    if (pool[a]) {
-
-        if (contador < 2) {
-            if (contador != 1 ) {
-                jugador1 = pool[a];
+    if (pool[a] && contador < 2) {
+        
+            if (contador < 1) {
+                player1 = pool[a];
                 delete pool[a];
                 document.getElementById(a).style.filter = 'grayscale(100%)';
                 document.getElementById("fighterP1").innerHTML = '<img src="../img/' + a + '-move.webp" />';
+                document.getElementById("player1Stage").innerHTML = '<img src="../img/' + a + '-move.webp" />';
                 document.getElementById("textSelect").innerHTML = 'Select player Two';
                 contador++;
             }
+
             else {
-                jugador2 = pool[a];
+                player2 = pool[a];
                 delete pool[a];
                 document.getElementById(a).style.filter = 'grayscale(100%)';
                 document.getElementById("fighterP2").innerHTML = '<img src="../img/' + a + '-move.webp" />';
+                document.getElementById("player2Stage").innerHTML = '<img src="../img/' + a + '-move.webp" />';
                 document.getElementById("textSelect").innerHTML = 'Press Fight';
                 contador++;
                 document.getElementById("buttonFight").style.display ="block";
             }
-        }
     }
 }
 
