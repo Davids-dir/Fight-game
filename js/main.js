@@ -5,7 +5,7 @@ let player2;
 let player1Life;
 let player2Life;
 
-// Creamos la clase de los luchadores
+// Creo la clase de los luchadores
 class Fighter {
     constructor(name, life, strength) {
         this.name = name;
@@ -14,13 +14,13 @@ class Fighter {
     }
 }
 
-// Añadimos los luchadores asignando las propiedades de la clase 'Fighter'
+// Añado los luchadores asignando las propiedades de la clase 'Fighter'
 let Ryu = new Fighter("Ryu", 190, 25);
 let Ken = new Fighter("Ken", 180, 26);
 let Chunli = new Fighter("Chunli", 170, 23);
 let Akuma = new Fighter("Akuma", 200, 28);
 
-// Creamos el array con los luchadores del pool asignandolos mediante 'clave:valor'
+// Creo el array con los luchadores del pool asignandolos mediante 'clave:valor'
 
 
 let pool = {
@@ -36,7 +36,7 @@ const Change = (a, b) => {
     document.getElementById(b).style.display = "block";
 }
 
-// Asignamos los objetos a los jugadores cuando pulsen sobre el personaje
+// Asigno los objetos a los jugadores cuando pulsen sobre el personaje
 const selChar = (a) => {
 
     if (pool[a] && contador < 2) {
@@ -108,18 +108,25 @@ const Reset = () => {
     document.getElementById('phase4').style.display = 'none';
     document.getElementById('phase1').style.display = 'block';
 
+    // Reset del contador
     contador = 0;
+
+    // Reset de las imagenes de los DIV
     document.getElementById("fighterP1").innerHTML = '<img src="" />';
     document.getElementById("fighterP2").innerHTML = '<img src="" />';
 
+    // Devuelvo el color a las imagenes de seleccion de personajes
     document.getElementById(player1.name).style.filter = 'grayscale(0%)';
     document.getElementById(player2.name).style.filter = 'grayscale(0%)';
 
+    // Escondo nuevamente el boton de Fight
     document.getElementById("buttonFight").style.display ="none";
     
+    // Restauro la vida del objeto asignado a los jugadores
     player1.life = player1Life;
     player2.life = player2Life;
 
+    // Devuelvo los objetos/luchadores al array
     pool[player1.name] = player1;
     pool[player2.name] = player2;
 

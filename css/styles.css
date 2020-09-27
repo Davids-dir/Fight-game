@@ -323,8 +323,6 @@ body {
     margin-left: 0.4em;
 }
 
-
-
 #containButton {
     text-align: center;
     width: 30%;
@@ -342,6 +340,11 @@ body {
 }
 
 #actionButton {
+    font-family: personalFont;
+    font-size: xx-large;
+    color: white;
+    background-color: black;
+    border: none;
     cursor: pointer;
     height: 60%;
     width: 30%;
@@ -373,13 +376,23 @@ body {
 #winnerPortrait {
     margin: auto;
     text-align: center;
-    height: 60%;
+    height: 40%;
     width: 100%;
 }
 
 .winnerNull {
     text-align: center;
-    height: 20%;
+    height: 30%;
     width: 100%;
 }
 
+#resetButton {
+    font-family: personalFont;
+    font-size: xx-large;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    height: 60%;
+    width: 30%;
+}
