@@ -86,13 +86,15 @@ body {
 }
 
 #buttonStart {
-    font-family: personalFont;
     color: white;
+    font-family: personalFont;
     font-size: xx-large;
+    letter-spacing: 0.1em;
     background-color: black;
     height: 50%;
     width: 50%;
     border: none;
+    cursor: pointer;
 }
 
 /* Estilos de 'Seleccion de Personaje' */
@@ -103,7 +105,7 @@ body {
     letter-spacing: 0.2em;
     display: flex;
     justify-content: center;
-    height: 30%;
+    height: 25%;
 }
 
 .selectDIV {
@@ -125,29 +127,48 @@ body {
 }
 
 .selectChar.One {
-    background-image: url(../img/ryu-static.png)
+    background-image: url(../img/ryu-static.png);
+    background-repeat: no-repeat;
 }
 
 .selectChar.Two{
     background-image: url(../img/chunli-static.png);
+    background-repeat: no-repeat;
+    margin-top: 1em;
+    height: 95.2%;
 }
 
 .selectChar.Three{
     background-image: url(../img/ken-static.png);
+    background-repeat: no-repeat;
+    margin-top: 1em;
+    height: 95.2%;
 }
 
 .selectChar.Four{
     background-image: url(../img/akuma-static.png);
+    background-repeat: no-repeat;
 }
 
 .chooseFighter {
     display: flex;
     flex-direction: row;
-    height: 35%;
+    height: 40%;
 }
 
-.fighter {
+#fighterP1 {
+    text-align: end;
+    margin-top: 3.5em;
+    height: auto;
     width: 20%;
+}
+
+#fighterP2 {
+    text-align: end;
+    margin-top: 3.5em;
+    height: auto;
+    width: 20%;
+    transform: rotateY(180deg);
 }
 
 .chooseFighterVS {
@@ -168,3 +189,15 @@ body {
     width: 100%;
 }
 
+#buttonFight {
+    display: none;
+    color: white;
+    font-family: personalFont;
+    font-size: xx-large;
+    letter-spacing: 0.1em;
+    background-color: black;
+    height: 50%;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+}

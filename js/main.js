@@ -26,11 +26,11 @@ pool = {
     'Ryu': Ryu,
     'Ken': Ken,
     'Chunli': Chunli,
-    'Akuma': Akuma
+    'Akuma': Akuma,
 }
 
 // Funcion de cambio de pantalla
-function change(a, b, action = null) {
+const Change = (a, b, action = null) => {
     document.getElementById(a).style.display = "none";
     document.getElementById(b).style.display = "block";
 
@@ -38,39 +38,32 @@ function change(a, b, action = null) {
         document.getElementById("textSelect").innerHTML = 'Select player One';
 }
 
-
-
 // Asignamos los objetos a los jugadores
-function selChar(a) {
-    if (contador < 2) {
-        if (contador == 0) {
-            document.getElementById(a).style.filter = 'grayscale(100%)';
-            jugador1 = pool[a];
-            contador++;
-            document.getElementById("textSelect").innerHTML = 'Select player Two';
+const selChar = (a) => {
+    if (pool[a]) {
+
+        if (contador < 2) {
+            if (contador == 0) {
+                jugador1 = pool[a];
+                delete pool[a];
+                document.getElementById(a).style.filter = 'grayscale(100%)';
+                document.getElementById("fighterP1").innerHTML = '<img src="../img/' + a + '-move.webp" />';
+                document.getElementById("textSelect").innerHTML = 'Select player Two';
+                contador++;
+            }
+            else {
+                jugador2 = pool[a];
+                delete pool[a];
+                document.getElementById(a).style.filter = 'grayscale(100%)';
+                document.getElementById("fighterP2").innerHTML = '<img src="../img/' + a + '-move.webp" />';
+                document.getElementById("textSelect").innerHTML = 'Press Fight';
+                contador++;
+                document.getElementById("buttonFight").style.display ="block";
+            }
         }
-        else {
-            document.getElementById(a).style.filter = 'grayscale(100%)';
-            jugador2 = pool[a];
-            contador++;
-            document.getElementById("textSelect").innerHTML = 'Press Fight';
-        }
-    }
-    else {
     }
 }
 
 
-
-// Cuando el jugador haga su seleccion marcamos al luchador en gris y lo inhabilitamos de la seleccion
-/*const Select = (player) => {
-    document.getElementById(player).innerHTML;
-    document.getElementById(player).style.filter = 'grayscale(100%)';
-}*/
-
-
-
-// Funcion para el cambio de pantalla
-let display = ['display Start', 'display Char', 'display Fight'];
 
 

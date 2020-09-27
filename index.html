@@ -17,7 +17,7 @@
             <div class="nullStart"></div>
             <div id="buttonStartDiv">
                 <div id="buttonStartChildTop"></div>
-                <div id="buttonStartChildBottom"><button id="buttonStart" onclick="change('phase1', 'phase2', 'players')">Press to Start</button></div>
+                <div id="buttonStartChildBottom"><button id="buttonStart" onclick="Change ('phase1', 'phase2', 'players')">Press to Start</button></div>
             </div>
             <div class="nullStart"></div>
         </div>
@@ -41,15 +41,14 @@
             </div>
             <div class="chooseFighter">
                 <div class="selectNull"></div>
-                <div class="fighter P1"></div>
+                <div id="fighterP1"></div>
                 <div class="chooseFighterVS">
                     <div class="imgVS"><img src="/img/versus.png" alt="versus" height="220" width="220"></div>
-                    <div class="versus"><button class="button" onclick="display(2)">Fight!</button></div>
+                    <div class="versus"><button id="buttonFight" onclick="Change ('phase2', 'phase3')">Fight!</button></div>
                 </div>
-                <div class="fighter P2"></div>
+                <div id="fighterP2"></div>
                 <div class="selectNull"></div>
             </div>
-            
         </div>
     </section>
 
