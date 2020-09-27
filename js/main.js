@@ -46,8 +46,8 @@ const selChar = (a) => {
                 player1Life = player1.life;
                 delete pool[a];
                 document.getElementById(a).style.filter = 'grayscale(100%)';
-                document.getElementById("fighterP1").innerHTML = '<img src="../img/' + a + '-move.webp" />';
-                document.getElementById("player1Stage").innerHTML = '<img src="../img/' + a + '-move.webp" />';
+                document.getElementById("fighterP1").innerHTML = '<img src="img/' + a + '-move.webp" />';
+                document.getElementById("player1Stage").innerHTML = '<img src="img/' + a + '-move.webp" />';
                 document.getElementById("nameP1").innerHTML = player1.name
                 document.getElementById("lifeBarP1").innerText = player1.life;
                 document.getElementById("textSelect").innerHTML = 'Select player Two';
@@ -59,8 +59,8 @@ const selChar = (a) => {
                 player2Life = player2.life;
                 delete pool[a];
                 document.getElementById(a).style.filter = 'grayscale(100%)';
-                document.getElementById("fighterP2").innerHTML = '<img src="../img/' + a + '-move.webp" />';
-                document.getElementById("player2Stage").innerHTML = '<img src="../img/' + a + '-move.webp" />';
+                document.getElementById("fighterP2").innerHTML = '<img src="img/' + a + '-move.webp" />';
+                document.getElementById("player2Stage").innerHTML = '<img src="img/' + a + '-move.webp" />';
                 document.getElementById("textSelect").innerHTML = 'Press Fight';
                 document.getElementById("nameP2").innerText = player2.name;
                 document.getElementById("lifeBarP2").innerHTML = player2.life;
@@ -83,7 +83,7 @@ const Hit = () => {
         
         if (player2.life <= 0) {
             document.getElementById('winnerText').innerText = player1.name + " " + "Win"
-            document.getElementById('winnerPortrait').innerHTML = '<img src="../img/' + player1.name + '-win.webp" height="160" width="140" />';
+            document.getElementById('winnerPortrait').innerHTML = '<img src="img/' + player1.name + '-win.webp" height="160" width="140" />';
             document.getElementById('phase4').style.display = 'block';
             document.getElementById('phase3').style.display = 'none';
         }
@@ -95,7 +95,7 @@ const Hit = () => {
         
         if (player1.life <= 0) {
             document.getElementById('winnerText').innerText = player2.name + " " + "Win"
-            document.getElementById('winnerPortrait').innerHTML = '<img src="../img/' + player2.name + '-win.webp" height="160" width="140" />';
+            document.getElementById('winnerPortrait').innerHTML = '<img src="img/' + player2.name + '-win.webp" height="160" width="140" />';
             document.getElementById('phase4').style.display = 'block';
             document.getElementById('phase3').style.display = 'none';
         } 
