@@ -30,20 +30,18 @@ pool = {
 }
 
 // Funcion de cambio de pantalla
-const Change = (a, b, action = null) => {
+const Change = (a, b) => {
     document.getElementById(a).style.display = "none";
     document.getElementById(b).style.display = "block";
-
-    if (action == "players")
-        document.getElementById("textSelect").innerHTML = 'Select player One';
 }
 
 // Asignamos los objetos a los jugadores cuando pulsen sobre el personaje
 const selChar = (a) => {
+
     if (pool[a]) {
 
         if (contador < 2) {
-            if (contador == 0) {
+            if (contador != 1 ) {
                 jugador1 = pool[a];
                 delete pool[a];
                 document.getElementById(a).style.filter = 'grayscale(100%)';
