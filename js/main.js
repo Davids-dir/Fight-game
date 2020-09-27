@@ -38,7 +38,7 @@ const Change = (a, b, action = null) => {
         document.getElementById("textSelect").innerHTML = 'Select player One';
 }
 
-// Asignamos los objetos a los jugadores
+// Asignamos los objetos a los jugadores cuando pulsen sobre el personaje
 const selChar = (a) => {
     if (pool[a]) {
 
