@@ -128,6 +128,5 @@ const Reset = () => {
     pool[player1.name] = player1;
     pool[player2.name] = player2;
 
-    document.getElementById("lifeBarP1").innerHTML = player1.life;
-    document.getElementById("lifeBarP2").innerHTML = player2.life;
+
 }
